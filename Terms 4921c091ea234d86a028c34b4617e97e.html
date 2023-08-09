@@ -1,0 +1,731 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Terms </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4921c091-ea23-4d86-a028-c34b4617e97e" class="page sans"><header><h1 class="page-title">Terms </h1><p class="page-description"></p></header><div class="page-body"><p id="7d4aaa4e-8822-4e95-8820-3a465c417a69" class=""> (my reference)</p><p id="8c7ae24a-e608-4756-9278-a5e526124ee1" class="">
+</p><p id="dfc38c3a-c98b-4348-b6e2-f8998c0ab837" class=""><strong>GSD - Ground Sampling Distance. </strong></p><p id="c20eb8dd-daee-4353-abe9-567ea1b756df" class="">This corresponds to the ground area covered by each pixel. Units m or cm per pixel. </p><p id="7e2f874f-3afa-47f3-9158-8d640435ed57" class="">GSD tells you the physical size of each pixel on the ground. </p><p id="baca2f2c-a04f-4d04-b746-2ba0060b96a3" class="">For example.  Let’s say the image that I am seeing is 1000px. GSD is the distance on the ground that each pixel covers. So, let’s say 1px covers 5m.  Hence, my GSD is 5m/px. This means I can cover 5*1000px = 5000m wide area. </p><p id="dfab1710-3ada-434b-b91c-84c2b4eee1c9" class="">
+</p><p id="bbbd831e-ad6e-4aea-a910-52ec92c68faa" class=""><strong>Spatial Resolution. </strong></p><p id="ae24106d-fa37-4166-85a2-7d11425636bd" class="">Refers to the clarity of an image. A spatial resolution of 1m means, the sensor can identify/distinguish images/ objects 1m apart. </p><p id="27e94c71-c52d-4d3d-a09e-9f0166e0e117" class="">
+</p><pre id="aa7eb4ba-27fb-4656-9e12-70d9770f4358" class="code"><code>Sure! Let&#x27;s consider an example where the GSD value and the spatial resolution
+ value are different:
+
+Example Scenario:
+We have an aerial image captured by a drone that covers an area of 500 meters
+in width and 300 meters in height. The image has a resolution of 1000 pixels 
+in width and 600 pixels in height.
+
+GSD Calculation:
+To calculate the GSD, we divide the size of the ground area covered by the 
+width or height of the image in pixels.
+
+GSD (width) = Width of the ground area / Number of pixels in width
+GSD (height) = Height of the ground area / Number of pixels in height
+
+GSD (width) = 500 meters / 1000 pixels = 0.5 meters/pixel
+GSD (height) = 300 meters / 600 pixels = 0.5 meters/pixel
+
+Spatial Resolution:
+The spatial resolution refers to the ability to distinguish between two 
+separate points or objects in an image. In this example, the spatial resolution is 
+0.5 meters/pixel in both the width and height directions.
+
+Difference between GSD and Spatial Resolution:
+In this example, both the GSD and the spatial resolution are the same value of 
+0.5 meters/pixel. The GSD tells us that each pixel in the image represents an 
+area of 0.5 square meters on the ground. The spatial resolution of 0.5 meters/pixel 
+indicates the level of detail that the sensor can capture.
+
+However, it&#x27;s important to note that GSD and spatial resolution can differ in 
+other cases. For example, in satellite imagery, the spatial resolution might 
+be specified as 1 meter/pixel, but the GSD might vary depending on the 
+satellite&#x27;s altitude, sensor specifications, and ground area covered by 
+each pixel.
+
+In summary, GSD and spatial resolution are related concepts, and in some cases, 
+they can have the same value, as seen in the example above. However, 
+they can differ based on specific imaging systems and applications. 
+GSD specifically quantifies the physical size of one pixel on the ground, 
+while spatial resolution indicates the level of detail that the sensor can capture.</code></pre><p id="681e634a-ede9-4679-bf32-d6f2304ef465" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7801a197-494c-4df8-b018-4fa79b9de0dc"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">I feel - Spatial resolution is more of a Sensor specification and is a fixed value. GSD depends on the sensor, the height with which it flies, the area it covers, etc. </div></figure><p id="ac3fd3c7-e505-40fc-bf41-1c082bbf1e03" class="">
+</p><p id="cf0e2bc3-b835-4c4e-bef5-09c2bf2fa125" class=""><strong>Spectral Resolution</strong></p><p id="e07a4a92-7114-4eac-ae5a-05d1b1fbecd1" class="">
+Spectral resolution refers to the ability of a sensor to distinguish and capture different wavelengths or bands of the electromagnetic spectrum. The electromagnetic spectrum includes visible light, infrared, ultraviolet, and other wavelengths</p><p id="85503344-b2e5-40f9-b421-d87ab4841395" class="">
+</p><p id="4e947a26-536f-4333-99b0-66ff0145fbef" class=""><strong>Vector Data</strong></p><p id="324e329a-b668-451e-b0ae-f18c90f7d43c" class="">Tells Geographic features using points, lines, and polygons. </p><p id="49f65a23-3cf3-4c44-9baf-1fade7aa14a4" class="">Attributes as inputs - such as x&amp;y coordinates if its points (mark a city with a dot), Lengths for lines (denotes river/ road), and area of polygons (a country border). </p><p id="e71b0961-1192-41b8-ba2a-e9be6873148c" class="">A world map is a low-budget vector data.</p><p id="46a12cee-b98c-40cb-bf6b-2806ef4bcb7c" class="">Here, the info is discrete. Not continuous. Helpful in understanding basic information. </p><p id="fc692b8f-2bb3-45ec-9cfd-62cf91a19c9c" class="">
+</p><p id="41153847-405a-4ae7-aa9f-8aa8d1f25dc1" class=""><strong>Rastor Data</strong></p><p id="da90d416-b1d8-4d09-a893-66012094ef77" class="">However, raster data are continuous where each location on earth is split into grids or pixels. Each pixel has a lot of information stored. If you consider an array, A = [Temperature, elevation, density]. So, Pixel A has 3 data sets. Imagine there’s ‘n’ number of grids. So, it has continuous information about a region. </p><p id="1ece0832-85ed-4487-8b64-88c9e72c490d" class="">
+</p><p id="dbabd150-d0dd-4948-ace3-b7c9606806fc" class=""><strong>Difference between Vector &amp; Rastor data. </strong></p><p id="8c266f9d-89b0-4365-a34c-e413a37558d6" class="">
+</p><p id="21fe69a8-c5e2-40fa-8ac8-5a63c6cdbfc4" class="block-color-gray_background"><strong>Vector Data:</strong>
+Imagine you have a map, and you want to show different places on it, like cities, rivers, and boundaries. In vector data, you use points, lines, and polygons to represent these features.</p><ul id="4518c413-b609-457c-a5b8-637836227772" class="block-color-gray_background bulleted-list"><li style="list-style-type:disc">Points: Think of a point as a tiny dot on the map representing a specific location, like a city&#x27;s exact position.</li></ul><ul id="6ee6fe3e-4ffa-4940-a551-798f619cb2e2" class="block-color-gray_background bulleted-list"><li style="list-style-type:disc">Lines: Lines are like thin strings connecting points on the map. They can show things like roads or rivers.</li></ul><ul id="831970c5-d604-4b57-8ee6-55e9c6b3eb3f" class="block-color-gray_background bulleted-list"><li style="list-style-type:disc">Polygons: Picture a polygon as a closed shape on the map, like the borders of a country or the outline of a lake.</li></ul><p id="2edf75cb-94e2-4d3e-b137-96f5f93ba6f5" class="block-color-gray_background">Each feature (point, line, or polygon) on the map also has extra information, like the name of the city, the length of a road, or the area of a lake. This extra information is the attributes of the feature.</p><p id="fbda637b-7df3-4fee-97ce-d86c6311d7d8" class="block-color-gray_background"><strong>Raster Data:</strong>
+Now, think of a map made up of tiny squares (pixels) like the pixels on your computer screen or a digital photo.</p><p id="eeff3eff-c24d-4e99-a225-dbf9cbfaf8c3" class="block-color-gray_background">Each square represents a small area on the map. In raster data, you use these pixels to show information about the entire area.</p><p id="aed36bcb-6b6b-4934-b7ad-2e959d0600c2" class="block-color-gray_background">For example, each pixel might represent the temperature of that area, the elevation (height) of the land, or the color of the landscape in a satellite image.</p><p id="a6bf966a-16d1-4040-bdde-50e48d347f2d" class="block-color-gray_background">Unlike vector data, where you represent individual features, raster data shows information continuously across the map. It&#x27;s like painting the entire map with different colors to show various characteristics of the land.</p><p id="832e0b05-7663-48e7-9f36-161f2c006085" class="block-color-gray_background"><strong>In Summary:</strong></p><ul id="501dfb54-b78e-4e19-b0f0-f23f58c3e9e5" class="block-color-gray_background bulleted-list"><li style="list-style-type:disc">Vector Data: Uses points, lines, and polygons to represent specific features on the map, each with its own attributes (like city names or road lengths).</li></ul><ul id="1c785d9b-47c3-44ae-9d10-1406dedac33c" class="block-color-gray_background bulleted-list"><li style="list-style-type:disc">Raster Data: Divides the map into tiny squares (pixels) and shows continuous information across the whole area (like temperature, elevation, or colors in an image).</li></ul><p id="c11b48e8-d7b3-4d1d-9fd6-054f91732020" class="block-color-gray_background">Both types of data are essential in geographic information systems (GIS) for different purposes, and they help us understand and analyze the world around us in various ways.</p><p id="e5f057fe-2197-48ac-9be3-59cdb728878a" class="">
+</p><p id="251f63c7-9317-4932-9d3c-8b491e181580" class=""><strong>Synthetic Aperture Radar</strong></p><p id="ea0c85a9-599a-4849-adf6-3c4a2029b8a1" class="">A remote sensing technology that sends microwaves signals toward the earth and they are reflected back to the sensor, which then processes the image with the received signal. Signal can pass through clouds, and get data even in bad weather. Used in land degradation, mining, etc. </p><p id="0d97ac7c-614f-4675-9a90-0d03f8cd4b47" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e47c76ec-486b-464b-838e-8410f27cfbce"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">I think SAR can’t detect material nature to the extent of hyperspectral imaging (uses electromagnetic waves to capture images in continuous spectral bands- typically visible, near infra-red). </div></figure><p id="bcc28d4d-4769-41ca-8dd0-82d9348651ae" class="">
+</p><p id="1a13ca25-950d-498d-af7d-87e239150fe6" class="">Google Earth Engine? </p><p id="c22050fa-51bf-45f7-8575-6f7b29d34810" class="">
+</p><p id="37e6b204-424c-4b2a-ad09-105106cbd947" class="">QGIS - Open source desktop application to create shape files. It’s like SolidWorks for mechanical analysis. Just like how you design and export that to analyse it in a different tool. QGIS is used for Geo-spatial analysis. iT ALSO </p></div></article></body></html>
